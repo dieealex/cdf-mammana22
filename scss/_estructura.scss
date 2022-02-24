@@ -4,6 +4,15 @@
     margin: 0;
 }
 
+.hOne {
+    font-size: 80px;
+    background-color: #0dc423;
+    background-image: linear-gradient(315deg, #63d471 0%, #145e0a 74%);
+    padding: 40px 0px 40px 0px;
+    color: white;
+    border: double 3px rgb(0, 145, 7);
+}
+
 //ANIDE
 li{
     background-color: linear-gradient(315deg, #075e00 0%, #119e1c 74%);
@@ -18,7 +27,7 @@ li{
 
 #messi {
     background-color: green;
-    background-image: repeating-linear-gradient(150deg, transparent, transparent 25px, rgb(81, 224, 93)25px, rgba(92, 216, 83)40px);
+    background-image: repeating-linear-gradient(150deg, transparent, transparent 10px, rgb(81, 224, 93)10px, rgba(92, 216, 83)15px);
     #messi::after {
         content: "";
         background-color: transparent;
@@ -32,7 +41,6 @@ li{
     }
 }
 
-
 #separadorMessi {
     width: 100%;
     position: relative;
@@ -44,7 +52,6 @@ li{
     background-color: green;
     background-image: linear-gradient(rgb(81, 224, 93)25px, rgba(92, 216, 83)40px)
 }
-
 
 //ANIDE
 
@@ -58,3 +65,54 @@ li{
     transform: scale(1.25);
 }
 
+/* MAPS*/
+
+$mapa:(
+    /* clave: valor*/
+    twitter: #55acee,
+    facebook: #3a5795,
+    instagram: rgb(143, 52, 143),
+    mail:     #C25E30,
+);
+
+//MAPS con each
+@each $valores, $colorcito in $mapa {
+    // fragmento que repite
+    .boton-#{$valores} {
+        background-color: $colorcito;
+        border: $colorcito;
+    }
+}
+
+/* MAPS GET*/
+$estilos: (
+    centro: center,
+);
+
+div {
+    text-align: map-get($estilos, centro);
+}
+
+/* EXTENDS */
+.hDos {
+    font-size: 30px;
+    background-color: #0dc423;
+    background-image: linear-gradient(315deg, #63d471 0%, #145e0a 74%);
+    color: white;
+    border: double 3px rgb(0, 145, 7);
+}
+.hDos-extend {
+    @extend .hDos;
+    font-size: 50px;
+}
+
+/* MIXINS*/
+@mixin apariencia($borde, $espacio) {
+    // fragmento que se imprime
+    border: outset $borde;
+    padding: $espacio;
+}
+
+.apariencia1{
+    @include apariencia(5px, 2px);
+}

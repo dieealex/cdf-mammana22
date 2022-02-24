@@ -11122,6 +11122,15 @@ textarea.form-control-lg {
   margin: 0;
 }
 
+.hOne {
+  font-size: 80px;
+  background-color: #0dc423;
+  background-image: linear-gradient(315deg, #63d471 0%, #145e0a 74%);
+  padding: 40px 0px 40px 0px;
+  color: white;
+  border: double 3px #009107;
+}
+
 li {
   background-color: linear-gradient(315deg, #075e00 0%, #119e1c 74%);
   padding: 0px 10px 0px 10px;
@@ -11133,7 +11142,7 @@ li li:hover {
 
 #messi {
   background-color: green;
-  background-image: repeating-linear-gradient(150deg, transparent, transparent 25px, #51e05d 25px, #5cd853 40px);
+  background-image: repeating-linear-gradient(150deg, transparent, transparent 10px, #51e05d 10px, #5cd853 15px);
 }
 #messi #messi::after {
   content: "";
@@ -11169,6 +11178,51 @@ li li:hover {
   transform: scale(1.25);
 }
 
+/* MAPS*/
+.boton-twitter {
+  background-color: #55acee;
+  border: #55acee;
+}
+
+.boton-facebook {
+  background-color: #3a5795;
+  border: #3a5795;
+}
+
+.boton-instagram {
+  background-color: #8f348f;
+  border: #8f348f;
+}
+
+.boton-mail {
+  background-color: #C25E30;
+  border: #C25E30;
+}
+
+/* MAPS GET*/
+div {
+  text-align: center;
+}
+
+/* EXTENDS */
+.hDos, .hDos-extend {
+  font-size: 30px;
+  background-color: #0dc423;
+  background-image: linear-gradient(315deg, #63d471 0%, #145e0a 74%);
+  color: white;
+  border: double 3px #009107;
+}
+
+.hDos-extend {
+  font-size: 50px;
+}
+
+/* MIXINS*/
+.apariencia1 {
+  border: outset 5px;
+  padding: 2px;
+}
+
 /******************
 ESTILOS DE TIPOGRAFIA
 **********************/
@@ -11185,8 +11239,8 @@ body {
 }
 
 .fondo {
-  background-color: #0aa10a;
-  background-color: linear-gradient(315deg, #95ff8e 0%, #a4d1a8 74%);
+  background-color: #3cdf4f;
+  background-image: linear-gradient(315deg, #63d471 0%, #20af0d 74%);
 }
 
 .fondo2 {
